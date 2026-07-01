@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>忍者転職 - 公式LINE</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #0d1a26; display: flex; flex-direction: column; align-items: center; }
+        
+        /* 全体を包むコンテナ（スマホ幅に最適化） */
+        .lp-container {
+            width: 100%;
+            max-width: 500px;
+            position: relative;
+            line-height: 0;
+        }
+        .lp-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* 👑 立体感があり、スマホの伸縮に100%連動してズレない本物のボタン */
+        .real-button {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #06C755; /* LINEのブランドカラー */
+            color: #ffffff;
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", sans-serif;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 12px; /* 綺麗な角丸 */
+            text-align: center;
+            
+            /* ✨ もろ画像っぽく見せないための立体的な影 */
+            box-shadow: 0 5px 15px rgba(6, 199, 85, 0.4), 0 4px 0px #04943f;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+            
+            cursor: pointer;
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+        }
+
+        /* スマホで指でタップした時に「カチッ」と沈むエフェクト */
+        .real-button:active {
+            transform: translateY(3px);
+            box-shadow: 0 2px 5px rgba(6, 199, 85, 0.4), 0 1px 0px #04943f;
+        }
+
+        /* ----------------------------------
+           各画像のボタン位置・サイズ調整（％指定）
+        ------------------------------------- */
+        /* 1枚目：公式LINEで無料相談する */
+        .btn-page1 {
+            font-size: 18px;
+            width: 90%;
+            height: 9.5%;
+            left: 5%;
+            bottom: 3.5%;
+        }
+
+        /* 2枚目：求人A（上側） */
+        .btn-page2-A {
+            font-size: 14px;
+            width: 78%;
+            height: 5.2%;
+            left: 11%;
+            top: 53.0%;
+        }
+        /* 2枚目：求人B（下側） */
+        .btn-page2-B {
+            font-size: 14px;
+            width: 78%;
+            height: 5.2%;
+            left: 11%;
+            top: 84.2%;
+        }
+
+        /* 3枚目：無料相談はこちら */
+        .btn-page3 {
+            font-size: 16px;
+            width: 66%;
+            height: 7.2%;
+            left: 4%;
+            bottom: 4.0%;
+        }
+
+        /* 4枚目：転職相談をしてみる */
+        .btn-page4 {
+            font-size: 16px;
+            width: 65%;
+            height: 7.2%;
+            left: 2%;
+            bottom: 4.0%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="lp-container">
+        <img src="lp001.png" alt="忍者転職 メイン" class="lp-image">
+        <a href="https://lin.ee/w6oxJ2r" class="real-button btn-button btn-page1">
+            公式LINEで無料相談する
+        </a>
+    </div>
+
+    <div class="lp-container">
+        <img src="lp002.png" alt="求人案内" class="lp-image">
+        <a href="https://lin.ee/w6oxJ2r" class="real-button btn-page2-A">
+            ▷この求人詳細についてLINEで聞いてみる◁
+        </a>
+        <a href="https://line.me/R/ti/p/あなたのLINEのID" class="real-button btn-page2-B">
+            ▷この求人詳細についてLINEで聞いてみる◁
+        </a>
+    </div>
+
+    <div class="lp-container">
+        <img src="lp003.png" alt="メリット" class="lp-image">
+        <a href="https://lin.ee/w6oxJ2r" class="real-button btn-page3">
+            ▷ 無料相談はこちら ◁
+        </a>
+    </div>
+
+    <div class="lp-container">
+        <img src="lp004.png" alt="流れ" class="lp-image">
+        <a href="https://lin.ee/w6oxJ2r" class="real-button btn-page4">
+            ▷ 転職相談をしてみる ◁
+        </a>
+    </div>
+
+</body>
+</html>
