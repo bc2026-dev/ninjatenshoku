@@ -174,7 +174,7 @@
             fbq('trackCustom', 'LineClick', { 'label': label });
             
             // MetaのAIに「LINE登録（成果）」として学習させるための標準イベント（Lead）
-            fbq('track', 'Lead', { content_name: label });
+            fbq('track', 'SubmitApplication', { content_name: label });
         }
 
         // ② スクロール率（50% / 90%）の計測スクリプト
