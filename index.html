@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>忍者転職 - テストページ</title>
+    <title>忍者転職 - 営業職特化の転職エージェント</title>
 
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -45,11 +45,16 @@
         }
 
         /* 【1枚目】4枚の強みカードの配置調整（背景画像 lp001.png 内の最下部エリアに重ねる） */
-        .fade-card { bottom: 10%; width: 22%; }
-        .c1 { left: 3.6%; }
-        .c2 { left: 27.2%; }
-        .c3 { left: 50.8%; }
-        .c4 { left: 74.4%; }
+	/* 【1枚目】4枚の強みカードの配置調整（縦並びに変更） */
+        .fade-card { 
+            width: 76%;       /* カードの横幅（背景画像に対しての割合。お好みで微調整してください） */
+            left: 12%;        /* 左右中央に配置 (100% - 76%) / 2 */
+        }
+        /* top（上からの位置）の％を調整して、縦に並べます */
+        .c1 { top: 78.0%; }
+        .c2 { top: 81.5%; }
+        .c3 { top: 85.0%; }
+        .c4 { top: 88.5%; }
 
         /* 【3枚目（lp003）】4本の横長帯の縦位置調整 */
         .fade-strip { left: 13.5%; width: 73%; }
@@ -92,42 +97,42 @@
         
         /* 1枚目：冒頭の白背景・忍者エリアのファーストCTA */
         .btn-top-white-cta {
-            width: 57%;
-            height: 3.8%;
+            width: 70%;
+            height: 2.8%;
             left: 19%;
-            top: 16.5%; 
-            font-size: max(16px, 3.5vw); 
+            top: 9.0%; 
+            font-size: max(16px, 2.8vw); 
         }
 
         /* 1枚目：お悩みセクション直下のボタン */
         .btn-issue-cta { 
-            width: 57%;             
+            width: 70%;             
             height: 2%;           
             left: 4%;               
-            top: 54.0%;             
-            font-size: max(16px, 3.0vw); 
+            top: 42.0%;             
+            font-size: max(16px, 2.8vw); 
         }
 
         /* 1枚目：強みサマリ下の登録ボタン（一番下） */
         .btn-page2 { 
-            width: 70%; 
+            width: 80%; 
             height: 2%; 
-            left: 17%; 
-            bottom: 7.5%; 
-            font-size: max(16px, 3.5vw); 
+            left: 11%; 
+            bottom: 4.5%; 
+            font-size: max(16px, 2.8vw); 
         }
 
         /* 2枚目：lp002（詳細タイムライン）内の各フェーズ用ボタン（4つ共通） */
         .btn-timeline-cta {
-            width: 70%;                  
+            width: 77%;                  
             height: 2.2%;
             left: 15%;       
-            font-size: max(11px, 1.8vw); 
+            font-size: max(12px, 2.2vw); 
         }
-        .t1 { top: 19.5%; } 
-        .t2 { top: 44.0%; } 
-        .t3 { top: 67.5%; } 
-        .t4 { top: 91.0%; } 
+        .t1 { top: 21.5%; } 
+        .t2 { top: 46.0%; } 
+        .t3 { top: 69.5%; } 
+        .t4 { top: 94.0%; } 
 
         /* 3枚目：最下部ボタン（画像 lp003.png 内の「白い余白」部分に％で重ねる調整） */
         .btn-page4 { 
@@ -239,7 +244,7 @@
 <div class="lp-container">
     <img src="lp002.png" class="lp-image" alt="なぜ選ばれるのか詳細タイムライン">
     
-    <a class="real-button btn-timeline-cta t1" href="https://lin.ee/oNxrYEJ" onclick="trackLine('timeline_cta_1')" target="_blank">さっそく【1分】で転職活動をスタートする</a>
+    <a class="real-button btn-timeline-cta t1" href="https://lin.ee/oNxrYEJ" onclick="trackLine('timeline_cta_1')" target="_blank">【1分】で転職活動をスタートする</a>
     <a class="real-button btn-timeline-cta t2" href="https://lin.ee/oNxrYEJ" onclick="trackLine('timeline_cta_2')" target="_blank">最速で転職活動を開始する</a>
     <a class="real-button btn-timeline-cta t3" href="https://lin.ee/oNxrYEJ" onclick="trackLine('timeline_cta_3')" target="_blank">最短で内定が出る対策を受ける</a>
     <a class="real-button btn-timeline-cta t4" href="https://lin.ee/oNxrYEJ" onclick="trackLine('timeline_cta_4')" target="_blank">入社後の最速出世キャリアを相談する</a>
